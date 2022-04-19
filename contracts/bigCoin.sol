@@ -616,10 +616,10 @@ contract BigCoin is Context, IERC20, Ownable {
             // Bsc Mainnet
             // 0x10ED43C718714eb63d5aA57B78B54704E256024E
             // Bsc Testnet
-            0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
+            // 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
             // Polygon Mainnet
             // Mumbai Polygon Testnet
-            // 0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff
+            0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff
         );
         // Create a uniswap pair for this new token
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
