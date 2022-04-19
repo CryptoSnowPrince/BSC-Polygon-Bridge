@@ -1336,31 +1336,31 @@ contract BigCoin is Context, IERC20, Ownable {
     }
 
     function setBuyFees(
-        uint256 lp,
-        uint256 marketing,
-        uint256 burn,
-        uint256 tax,
-        uint256 team
+        uint256 _lp,
+        uint256 _marketing,
+        uint256 _burn,
+        uint256 _tax,
+        uint256 _team
     ) external onlyOwner {
-        buyFee.autoLp = lp;
-        buyFee.marketing = marketing;
-        buyFee.burn = burn;
-        buyFee.tax = tax;
-        buyFee.team = team;
+        buyFee.autoLp = _lp;
+        buyFee.marketing = _marketing;
+        buyFee.burn = _burn;
+        buyFee.tax = _tax;
+        buyFee.team = _team;
     }
 
     function setSellFees(
-        uint256 lp,
-        uint256 marketing,
-        uint256 burn,
-        uint256 tax,
-        uint256 team
+        uint256 _lp,
+        uint256 _marketing,
+        uint256 _burn,
+        uint256 _tax,
+        uint256 _team
     ) external onlyOwner {
-        sellFee.autoLp = lp;
-        sellFee.marketing = marketing;
-        sellFee.burn = burn;
-        sellFee.tax = tax;
-        sellFee.team = team;
+        sellFee.autoLp = _lp;
+        sellFee.marketing = _marketing;
+        sellFee.burn = _burn;
+        sellFee.tax = _tax;
+        sellFee.team = _team;
     }
 
     function setRouterAddress(address newRouter) external onlyOwner {
