@@ -1,4 +1,5 @@
-pragma solidity ^0.8.11;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./IToken.sol";
@@ -118,7 +119,7 @@ contract Bridge{
 
   function updateChainById(uint256 chainId, bool isActive) external {
       require(msg.sender == validator, "only validator");
-      activeChainIds[chainId] == isActive;
+      activeChainIds[chainId] = isActive;
   }
 
   function includeToken(string memory ticker, address addr) external{

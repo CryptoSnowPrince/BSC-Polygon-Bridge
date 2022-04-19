@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.11;
+pragma solidity ^0.8.7;
 interface IERC20 { 
     /**
      * @dev Returns the amount of tokens in existence.

@@ -1,4 +1,5 @@
-pragma solidity ^0.8.11;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
 
 interface IToken {
   function mint(address to, uint amount) external;
