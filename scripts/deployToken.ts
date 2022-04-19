@@ -13,13 +13,16 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
+  const _marketingWallet = "0x256C9FbE9093E7b9E3C4584aDBC3066D8c6216da";
+  const _teamWallet = "0x7F77451e9c89058556674C5b82Bd5A4fab601AFC";
+
   // We get the contract to deploy
-  const Bridge = await ethers.getContractFactory("Bridge");
-  const bridge = await Bridge.deploy();
+  const BigCoin = await ethers.getContractFactory("BigCoin");
+  const bigCoin = await BigCoin.deploy(_marketingWallet, _teamWallet);
 
-  await bridge.deployed();
+  await bigCoin.deployed();
 
-  console.log("Bridge deployed to:", bridge.address);
+  console.log("BigCoin deployed to:", bigCoin.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

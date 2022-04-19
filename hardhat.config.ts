@@ -38,8 +38,8 @@ const config: HardhatUserConfig = {
         version: "0.8.11",
         settings: {
           optimizer: {
-            enabled: false,
-            runs: 200
+            enabled: true,
+            runs: 1000
           }
         }
       },
